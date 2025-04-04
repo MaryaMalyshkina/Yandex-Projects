@@ -9,4 +9,4 @@
 | [Computer_games_sales](Computer_games_sales)|Анализ исторических данных о продажах компьютерных игр для выявления закономерностей, опредедяющих успешность игры|pandas, scipy|
 |  [Taxi_forecast](Taxi_forecast) | Построение модели предсказания количества заказов такси на следующий час с целью привлечения большего числа водителей в часы пиковой нагрузки  |pandas, seaborn, statsmodels, sklearn, prophet, skforecast|
 |[Cow_buy](Cow_buy)| Создание двух прогнозных моделей: для возможного удоя коровы и для вкуса молока | pandas, seaborn, scipy, phik, sklearn|
-|One_click|  Построение модели предсказания вероятности снижения покупательской активности клиента в следующие три месяца |pandas, seaborn, scipy, phik, sklearn, shap|
+|[One_click](One_click)|  Построение модели предсказания вероятности снижения покупательской активности клиента в следующие три месяца |pandas, seaborn, scipy, phik, sklearn, shap|
