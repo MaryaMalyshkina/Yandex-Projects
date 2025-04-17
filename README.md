@@ -11,3 +11,4 @@
 |[Cow_buy](Cow_buy)| Создание двух прогнозных моделей: для возможного удоя коровы и для вкуса молока | pandas, seaborn, scipy, phik, sklearn|
 |[One_click](One_click)|  Построение модели предсказания вероятности снижения покупательской активности клиента в следующие три месяца |pandas, seaborn, scipy, phik, sklearn, shap|
 |[Job_satisfaction](Job_satisfaction)| Построение модели предсказания уровня удовлетворённости сотрудника работой, а также его вероятного увольнения |pandas, seaborn, scipy, phik, sklearn|
+|[Car_price](car_price)| Построение модели для определения рыночной стоимости автомобиля |pandas, sklearn, lightgbm, catboost, shap|
