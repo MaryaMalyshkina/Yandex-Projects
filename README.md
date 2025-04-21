@@ -12,3 +12,5 @@
 |[One_click](One_click)|  Построение модели предсказания вероятности снижения покупательской активности клиента в следующие три месяца |pandas, seaborn, scipy, phik, sklearn, shap|
 |[Job_satisfaction](Job_satisfaction)| Построение модели предсказания уровня удовлетворённости сотрудника работой, а также его вероятного увольнения |pandas, seaborn, scipy, phik, sklearn|
 |[Car_price](car_price)| Построение модели для определения рыночной стоимости автомобиля |pandas, sklearn, lightgbm, catboost, shap|
+|[Toxic_comments](toxic_comments)| Построение модели классификации отзывов на токсичные и нейтральные |pandas, sklearn, imblearn, wordcloud, transformers_interpret, nltk|
+|[Temp_steel](temp_steel)| Построение модели для определения температуры стали после этапа обработки|pandas, sklearn,  phik, scipy, catboost, shap|
