@@ -18,7 +18,6 @@
 - sklearn.model_selection.TimeSeriesSplit
 - sklearn.linear_model.LinearRegression
 - sklearn.metrics.root_mean_squared_error
-- sklearn.tree.DecisionTreeClassifier
 - sklearn.tree.DecisionTreeRegressor
 - sklearn.model_selection.GridSearchCV
 - prophet.Prophet
