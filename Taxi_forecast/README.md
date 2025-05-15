@@ -22,24 +22,55 @@
 - sklearn.tree.DecisionTreeRegressor
 - sklearn.model_selection.GridSearchCV
 - prophet.Prophet
-
-
-
-
-from pmdarima import auto_arima
-
-from statsmodels.graphics.tsaplots import plot_acf
-from statsmodels.tsa.stattools import adfuller
-from statsmodels.tsa.arima_model import ARIMA
-from statsmodels.tsa.arima.model import ARIMA
-from statsmodels.tsa.seasonal import seasonal_decompose
-from skforecast.recursive import ForecasterSarimax
-from statsmodels.tsa.statespace.sarimax import SARIMAX
-from skforecast.sarimax import Sarimax
-from skforecast.recursive import ForecasterSarimax
-from skforecast.model_selection import TimeSeriesFold
-from skforecast.model_selection import grid_search_sarimax
-
+- skforecast.sarimax.Sarimax
 
 # Общий вывод
+1. Проанализирован временной ряд числа заказов:
+
+выделен тренд, сезонная компонента и остатки.
+
+Построен график автокорреляционной функции.
+
+С помощью теста Дики-Фуллера оценена стационарность временного ряда.
+
+2. В проекте рассмотрены 4  разные модели:
+
+линейная регрессия, Prophet, SARIMAX и DecisionTreeRegressor.
+
+Для обучения вся выборка данных была поделена на тренировочную, валидационную и тестовую в соотношении 8:1:1.
+
+Качество каждой модели оценивалось на валидационной выборке по метрике RSME,
+
+наилучшая модель  выбиралась по наименьшему значению этой метрики.
+
+3. Для линейной регрессии и DecisionTreeRegressor дополнительно вводились новые признаки:
+
+  - час, день , месяц и день недели,
+
+  - столбцы с предыдущими значениями с лагом от 1 до заданного max_lag,
+
+  - скользящее среднее с заданной шириной окна rolling_mean_size.
+
+В цикле перебирались разные значения лага и ширины окна, создавался набор признаков, модель обучалась на этих признаках,
+и рассчитывалась RSME на валидационной выборке.
+
+Для DecisionTreeRegressor гиперпараметры для дерева 
+
+подбиралисьс помощью GridSearchCV и кросс-валидацией для временных рядов с помощью TimeSeriesSplit. 
+
+4. Формально лучшей моделью по метрике RSME на валидационной выборке стала DecisionTreeRegressor, 
+
+но на тестовой она выдала  значение выше требуемого, поэтому лучшей в итоге 
+
+признана модель линейной регрессии (с добавлением дополнительных признаков в модель), 
+
+для которой RSME на тестовой выборке удовлетворяет условию.
+
+В целом, все рассмотренные модели угадали периодичность, но сильно занизили амплитуду пиков.
+
+Линейная регресия не только аккуратно подобрала шаг периодичности, но и лучше справилась с амплитудой пиков, 
+
+поэтому считаем, что она показала наилучший результат в задаче прогноза числа заказов.
+
+5. Для линейной регрессии оценена важность признаков: самый большой вес в модель по сравнению со всеми остальными признаками внес месяц. 
 
