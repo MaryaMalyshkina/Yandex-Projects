@@ -14,7 +14,6 @@
 
 - pandas
 - matplotlib.pyplot
-- nltk
 - seaborn
 - numpy
 - scipy
