@@ -17,6 +17,30 @@ HR-аналитики компании «Работа с заботой» пом
 
 - pandas
 - matplotlib.pyplot
-- nltk
+- seaborn
+- numpy
+- phik
+- scipy
+- sklearn.linear_model.LinearRegression
+- sklearn.linear_model.LogisticRegression
+- sklearn.neighbors.KNeighborsClassifier
+- sklearn.svm.SVC
+- sklearn.tree.DecisionTreeClassifier
+- sklearn.tree.DecisionTreeRegressor
+- sklearn.model_selection.RandomizedSearchCV
+- sklearn.model_selection.cross_val_score
+- sklearn.feature_selection.SelectKBest
+- sklearn.dummy.DummyClassifier
+- sklearn.preprocessing.StandardScaler
+- sklearn.preprocessing.OneHotEncoder
+- sklearn.preprocessing.OrdinalEncoder
+- sklearn.preprocessing.MinMaxScaler
+- sklearn.preprocessing.LabelEncoder
+- sklearn.preprocessing.PolynomialFeatures
+- sklearn.impute.SimpleImputer 
+- sklearn.metrics.roc_auc_score
+- sklearn.metrics.make_scorer
+- sklearn.pipeline.Pipeline
+- sklearn.compose.ColumnTransformer
 
 # Общий вывод
