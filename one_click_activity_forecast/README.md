@@ -17,6 +17,22 @@
 - nltk
 - seaborn
 - numpy
+- scipy
+- phik
+- sklearn.metrics.roc_auc_score
+- sklearn.preprocessing.StandardScaler
+- sklearn.preprocessing.OneHotEncoder
+- sklearn.preprocessing.OrdinalEncoder
+- sklearn.preprocessing.MinMaxScaler
+- sklearn.pipeline.Pipeline
+- sklearn.compose.ColumnTransformer
+- sklearn.linear_model.LogisticRegression
+- sklearn.neighbors.KNeighborsClassifier
+- sklearn.svm.SVC  
+- sklearn.tree.DecisionTreeClassifier
+- sklearn.model_selection.RandomizedSearchCV
+- sklearn.model_selection.cross_val_score
+- sklearn.inspection.permutation_importance
 
 # Общий вывод
 Предсказание покупательской активности представляет собой задачу классификации.
