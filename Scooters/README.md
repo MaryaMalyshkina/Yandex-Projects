@@ -7,7 +7,7 @@
 
 - pandas
 - matplotlib.pyplot
-- nltk
+- scipy
 - seaborn
 - numpy
 
