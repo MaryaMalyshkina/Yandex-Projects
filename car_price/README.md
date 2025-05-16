@@ -18,11 +18,11 @@
 - shap
 - scipy.stats
 - sklearn.linear_model.LinearRegression
-- sklearn.preprocessing.StandardScaler,
-- sklearn.preprocessing.OneHotEncoder,
+- sklearn.preprocessing.StandardScaler
+- sklearn.preprocessing.OneHotEncoder
 - sklearn.preprocessing.OrdinalEncoder
 - sklearn.impute.SimpleImputer
-- sklearn.metrics.mean_squared_error,
+- sklearn.metrics.mean_squared_error
 - sklearn.pipeline.Pipeline
 - sklearn.compose.ColumnTransformer
 - catboost.CatBoostRegressor
